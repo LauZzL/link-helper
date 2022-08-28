@@ -40,3 +40,8 @@
 ## 提交意见
 
 我们的官方群交流群已经不再接受任何申请信息，你可以到 [博客](https://www.ilzya.com/) 或 [ISSUES](https://github.com/lzyAB/link-helper/issues) 或 [油猴](https://greasyfork.org/zh-CN/scripts/447128-%E7%A9%BA%E5%9F%8E%E9%87%8C%E9%93%BE%E6%8E%A5%E5%8A%A9%E6%89%8B/feedback) 提交你在使用中遇到的任何问题！
+
+
+## 开源协议 
+
+脚本以 `AGLP` 协议开源。
