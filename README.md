@@ -6,11 +6,6 @@
 
 <div align="center">
 <img src="https://img.shields.io/github/stars/lzyAB/link-helper.svg"/>
-</div>
-
-----
-
-<div align="center">
 <a href="https://greasyfork.org/zh-CN/scripts/447128-%E7%A9%BA%E5%9F%8E%E9%87%8C%E9%93%BE%E6%8E%A5%E5%8A%A9%E6%89%8B">
 <img src="https://img.shields.io/badge/%E6%B2%B9%E7%8C%B4-%E7%A9%BA%E5%9F%8E%E9%87%8C%E9%93%BE%E6%8E%A5%E5%8A%A9%E6%89%8B-brightgreen.svg"/>
 </a>
@@ -20,7 +15,6 @@
 </div>
 
 ----
-
 
 ## 介绍
 
