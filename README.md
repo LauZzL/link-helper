@@ -5,9 +5,7 @@
 <h1 align="center">空城里链接助手</h1>
 
 <div align="center">
-<img src="https://img.shields.io/github/stars/lzyAB/link-helper"/>
-<img src="https://img.shields.io/github/manifest-json/v/lzyAB/link_helper"/>
-<img src="https://img.shields.io/github/license/lzyAB/link-helper"/>
+<img src="https://img.shields.io/github/stars/lzyAB/link-helper.svg"/>
 </div>
 
 ----
