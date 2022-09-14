@@ -53,8 +53,8 @@
     'use strict';
 
     // 第一次安装脚本打开提示
-    if(GM_getValue('msg_alert') != 0){
-        GM_setValue('msg_alert' , 0)
+    if(GM_getValue('msg_alert') != 1){
+        GM_setValue('msg_alert' , 1)
         alert('你可以在弹出的页面加入我们的交流群！')
         window.open('https://www.ilzya.com/group.html')
     }
@@ -111,7 +111,7 @@
                 } else {
                     param = 'url=' + val + '&lot_number=' + geetest_data.lot_number + '&captcha_output=' + geetest_data.captcha_output + '&pass_token=' + geetest_data.pass_token + '&gen_time=' + geetest_data.gen_time;
                 }
-                if(geetest_data == null || undefined || '' && document.domain == 'www.feimaoyun.com'){
+                if( document.domain == 'www.feimaoyun.com' && geetest_data == null || undefined || '' ){
                     // 滑动数据的简单验证
                     btn_get_durl.innerHTML = '获取下载地址';
                     let act4 = "极验数据错误或未完成验证"
