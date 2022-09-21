@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         空城里链接助手
 // @namespace    https://www.ilzya.com/archives/4/
-// @version      2.2.3
+// @version      2.2.4
 // @antifeature  membership
 // @description  免等待下载文件，超酷的哎~
 // @author       空城里
@@ -190,7 +190,7 @@
                 }
                 GM_xmlhttpRequest({
                     method: "post",
-                    url: 'http://resolve.ilzya.com::1306/resolve',
+                    url: 'http://resolve.ilzya.com/resolve',
                     data: 'auth_code='+getValue('auth_code')+'&'+param,
                     headers: { "Content-Type": "application/x-www-form-urlencoded" },
                     onload: function (res) {
