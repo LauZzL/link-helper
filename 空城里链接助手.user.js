@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         空城里链接助手
 // @namespace    https://www.ilzya.com/archives/4/
-// @version      2.2.4
+// @version      2.2.5
 // @antifeature  membership
 // @description  免等待下载文件，超酷的哎~
 // @author       空城里
@@ -12,7 +12,7 @@
 // @include        *://www.feimaoyun.com/*
 // @include        *://*.lanzou*.com/*
 // @include        *://*.77file.com/*
-// @include        *://*.xunniupan.com/*
+// @include        *://*.xunniupan.co/*
 // @include        *://*.567file.com/*
 // @include        *://dufile.com/*
 // @include        *://*.expfile.com/*
