@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         空城里链接助手
 // @namespace    https://www.ilzya.com/archives/4/
-// @version      2.2.5
+// @version      2.2.6
 // @antifeature  membership
 // @description  免等待下载文件，超酷的哎~
 // @author       空城里
@@ -85,6 +85,7 @@
         _wd: {
             display: 'none'
         },
+        _version:'2.2.6',
         _durl: null,
         _filename: '',
         _aria_url: 'http://localhost:6800/jsonrpc', //这里是Aria推送地址，本地默认不需要更改
@@ -241,7 +242,9 @@
                                 }
                                 feimao_actBox(act4,act1,"","", function(){ _func._obj.chrome_down(_global._durl) } )
                             }else{
-                                alert(result.message);
+                                title.innerHTML = result.message + " - verison"+_global._version;
+                                btn_get_durl.innerHTML = "解析成功";
+                                return
                             }
                         } else if (!result.code) {
                             alert('后端服务器未返回数据，请重试！')
@@ -409,7 +412,7 @@
     title.style.backgroundColor = '#466bff';
     title.style.textAlign = 'center';
     title.style.color = 'red';
-    title.innerHTML = '空城里链接助手';
+    title.innerHTML = '空城里链接助手 - version:'+_global._version;
  
  
     let btn_get_durl = document.createElement('span');
