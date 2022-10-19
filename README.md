@@ -22,6 +22,23 @@
 
 我们在油猴中没有任何账号且未发布过任何脚本，谨防被骗，官方脚本只在此页面进行更新及发布。
 
+## 安装
+
+<ol>
+    <li>安装油猴插件</li>
+    <ul>
+      <li><a href='https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo' target='_blank'>Chrome Tampermonkey</a></li>
+      <li><a href='https://addons.mozilla.org/firefox/addon/tampermonkey/' target='_blank'>Firefox Tampermonkey</a></li>
+      <li><a href='http://tampermonkey.net/?browser=safari' target='_blank'>Safari Tampermonkey</a></li>
+      <li><a href='https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd' target='_blank'>Egde Tampermonkey</a></li>
+    </ul>
+    <li>安装脚本</li>
+    <ul>
+      <li><a href='https://github.com/lzyAB/link-helper/raw/master/%E7%A9%BA%E5%9F%8E%E9%87%8C%E9%93%BE%E6%8E%A5%E5%8A%A9%E6%89%8B.user.js' target='_blank'>Github Raw</a></li>
+    </ul>
+</ol>
+
+
 ## 协助我们
 
 你可以加入这个项目一起维护，它不受任何限制！
