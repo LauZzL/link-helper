@@ -35,6 +35,9 @@
     <li>安装脚本</li>
     <ul>
       <li><a href='https://github.com/lzyAB/link-helper/raw/master/%E7%A9%BA%E5%9F%8E%E9%87%8C%E9%93%BE%E6%8E%A5%E5%8A%A9%E6%89%8B.user.js' target='_blank'>Github Raw</a></li>
+      <li>
+         <a href='https://github.com/lzyAB/link-helper/blob/master/%E7%A9%BA%E5%9F%8E%E9%87%8C%E9%93%BE%E6%8E%A5%E5%8A%A9%E6%89%8B.user.js'>点我复制所有代码</a>，油猴 - 添加脚本 - 全选 - 粘贴复制的脚本
+      </li>
     </ul>
 </ol>
 
