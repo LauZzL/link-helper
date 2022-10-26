@@ -85,7 +85,7 @@
         _wd: {
             display: 'none'
         },
-        _version:'2.2.6',
+        _version:'2.2.7',
         _durl: null,
         _filename: '',
         _aria_url: 'http://localhost:6800/jsonrpc', //这里是Aria推送地址，本地默认不需要更改
@@ -176,7 +176,8 @@
                 _global._durl = null;
                 let geetest_data = GM_getValue('geetest_data');
                 let param = '';
-                if (!geetest_data) {
+                param = 'url=' + val;
+                /**if (!geetest_data) {
                     param = 'url=' + val;
                 } else {
                     param = 'url=' + val + '&lot_number=' + geetest_data.lot_number + '&captcha_output=' + geetest_data.captcha_output + '&pass_token=' + geetest_data.pass_token + '&gen_time=' + geetest_data.gen_time;
@@ -188,7 +189,7 @@
                     let act1 = "<font color=red><U>请刷新页面,极验数据错误</U>！</font>"
                     feimao_actBox(act4,act1,"","", function(){ window.location.reload() } )
                     return
-                }
+                } */
                 GM_xmlhttpRequest({
                     method: "post",
                     url: 'http://resolve.ilzya.com/resolve',
@@ -578,9 +579,11 @@
         GM_deleteValue('geetest_data');
  
         feimao_actBox = feimao_actBox_fn;//飞猫下载按钮替换
+
+        _func._obj.resolve(document.location.href)
  
  
-        initGeetest4({
+        /**initGeetest4({
             captchaId: 'b56cfe7983ce98c89b8aead50efc3eff'
         },function (captcha) {
             // captcha为验证码实例
@@ -604,9 +607,10 @@
                 let act1 = "验证失败"
                 feimao_actBox(act4,act1)
             })
-        });
+        });*/
  
         //-----------
+        /** 
         let tips_loop
         let geetest_btn_click_loop = setInterval(function () {
             let geetest_btn_click = document.querySelector('.geetest_btn_click')
@@ -637,7 +641,7 @@
             }
         }, 500);
         //---------
- 
+        */
         /**
          *act4左按钮文字，act1中按钮文字，act2右按钮文件，act4_fn左按钮点击函数，act1_fn中按钮点击，act2_fn右按钮点击
          */
@@ -645,7 +649,7 @@
             let actBox = document.getElementsByClassName('actBox')
             if(actBox&&actBox[0]){
                 if(GM_getValue("act2_click")==0||GM_getValue("act2_click")==1){
-                    act1 = act1 || "请手动根据提示完成验证" }else{ act1 = act1 || "完成验证后自动解析" }
+                    act1 = act1 || "解析中,请等待!" }else{ act1 = act1 || "完成验证后自动解析" }
                 act4 = "<div class='act act4'style='user-select:none'>"+(act4 || "微信搜索 IT空城里 关注不迷路！")+"</div>"
                 act1 = "<div class='act act1'style='color:#466bff;user-select:none'>"+act1+"</div>"
                 act2 = "<div class='actCodeBox act act2'style='color:#28c0bc;text-align:center;user-select:none'>"+(act2 || "by 空城里@www.ilzya.com")+act2_clickfn()+"</div>"
@@ -654,6 +658,7 @@
                 document.getElementsByClassName('act act4')[0].onclick =act4_fn||function () { wd.style.display = wd.style.display == 'none' ? 'block' : 'none'; }
                 document.getElementsByClassName('act act1')[0].onclick =act1_fn||""
                 document.getElementsByClassName('act act2')[0].onclick =act2_fn||function () { document.getElementsByClassName('act act2')[0].innerHTML = "by 空城里@www.ilzya.com"+act2_clickfn(true) }
+
             }
         }
         function act2_clickfn (click_) {
@@ -682,7 +687,7 @@
         if ( Is_feimao() ) { feimao_actBox() }
  
     }//window.onload
- 
+    
  
  
 })();
