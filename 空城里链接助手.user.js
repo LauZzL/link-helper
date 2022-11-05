@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         空城里链接助手
 // @namespace    https://www.ilzya.com/archives/4/
-// @version      2.2.7
+// @version      2.2.8
 // @antifeature  membership
 // @description  免等待下载文件，超酷的哎~
 // @author       空城里
@@ -41,7 +41,7 @@
 // @grant        GM_notification
 // @connect      localhost
 // @connect      127.0.0.1
-// @connect      resolve.ilzya.com
+// @connect      resolve-one.vercel.app
 // @connect      *
  
  
@@ -192,7 +192,7 @@
                 } */
                 GM_xmlhttpRequest({
                     method: "post",
-                    url: 'http://resolve.ilzya.com/resolve',
+                    url: 'https://resolve-one.vercel.app/',
                     data: 'auth_code='+getValue('auth_code')+'&'+param,
                     headers: { "Content-Type": "application/x-www-form-urlencoded" },
                     onload: function (res) {
