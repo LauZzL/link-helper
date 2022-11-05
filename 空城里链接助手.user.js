@@ -85,7 +85,7 @@
         _wd: {
             display: 'none'
         },
-        _version:'2.2.7',
+        _version:'2.2.8',
         _durl: null,
         _filename: '',
         _aria_url: 'http://localhost:6800/jsonrpc', //这里是Aria推送地址，本地默认不需要更改
