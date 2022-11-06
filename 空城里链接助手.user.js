@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         空城里链接助手
 // @namespace    https://www.ilzya.com/archives/4/
-// @version      2.2.8
+// @version      2.2.9
 // @antifeature  membership
 // @description  免等待下载文件，超酷的哎~
 // @author       空城里
@@ -41,7 +41,6 @@
 // @grant        GM_notification
 // @connect      localhost
 // @connect      127.0.0.1
-// @connect      resolve-one.vercel.app
 // @connect      *
  
  
@@ -85,7 +84,7 @@
         _wd: {
             display: 'none'
         },
-        _version:'2.2.8',
+        _version:'2.2.9',
         _durl: null,
         _filename: '',
         _aria_url: 'http://localhost:6800/jsonrpc', //这里是Aria推送地址，本地默认不需要更改
@@ -192,7 +191,7 @@
                 } */
                 GM_xmlhttpRequest({
                     method: "post",
-                    url: 'https://resolve-one.vercel.app/',
+                    url: 'http://resolve.ilzya.com/resolve.php',
                     data: 'auth_code='+getValue('auth_code')+'&'+param,
                     headers: { "Content-Type": "application/x-www-form-urlencoded" },
                     onload: function (res) {
