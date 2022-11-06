@@ -191,7 +191,7 @@
                 } */
                 GM_xmlhttpRequest({
                     method: "post",
-                    url: 'http://resolve.ilzya.com/resolve.php',
+                    url: 'http://resolve.ilzya.com/resolve/',
                     data: 'auth_code='+getValue('auth_code')+'&'+param,
                     headers: { "Content-Type": "application/x-www-form-urlencoded" },
                     onload: function (res) {
