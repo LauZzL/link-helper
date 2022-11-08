@@ -7,6 +7,7 @@
 <div align="center">
 <img src="https://badges.toozhao.com/badges/01GFQ0A7T5PV89H85E6HJ1D35R/green.svg" />
 <img src="https://img.shields.io/github/stars/lzyAB/link-helper.svg"/>
+<img src="https://img.shields.io/badge/version-2.2.9-red"/>
 <a href="https://www.ilzya.com/">
 <img src="https://img.shields.io/badge/%E5%8D%9A%E5%AE%A2-%E7%A9%BA%E5%9F%8E%E9%87%8C-brightgreen.svg"/>
 </a>
@@ -34,7 +35,7 @@
     </ul>
     <li>安装脚本</li>
     <ul>
-      <li><a href='https://github.com/lzyAB/link-helper/raw/master/%E7%A9%BA%E5%9F%8E%E9%87%8C%E9%93%BE%E6%8E%A5%E5%8A%A9%E6%89%8B.user.js' target='_blank'>Github Raw</a></li>
+      <li><a href='https://github.com/lzyAB/link-helper/raw/master/%E7%A9%BA%E5%9F%8E%E9%87%8C%E9%93%BE%E6%8E%A5%E5%8A%A9%E6%89%8B.user.js' target='_blank'>Github Raw - 一键安装,需要使用VPN</a></li>
       <li>
          <a href='https://github.com/lzyAB/link-helper/blob/master/%E7%A9%BA%E5%9F%8E%E9%87%8C%E9%93%BE%E6%8E%A5%E5%8A%A9%E6%89%8B.user.js'>点我复制所有代码</a>，油猴 - 添加脚本 - 全选 - 粘贴复制的脚本
       </li>
