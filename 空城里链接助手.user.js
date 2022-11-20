@@ -176,7 +176,8 @@
                 let geetest_data = GM_getValue('geetest_data');
                 let param = '';
                 param = 'url=' + val;
-                /**if (!geetest_data) {
+                console.log(geetest_data)
+                if (!geetest_data) {
                     param = 'url=' + val;
                 } else {
                     param = 'url=' + val + '&lot_number=' + geetest_data.lot_number + '&captcha_output=' + geetest_data.captcha_output + '&pass_token=' + geetest_data.pass_token + '&gen_time=' + geetest_data.gen_time;
@@ -188,13 +189,14 @@
                     let act1 = "<font color=red><U>请刷新页面,极验数据错误</U>！</font>"
                     feimao_actBox(act4,act1,"","", function(){ window.location.reload() } )
                     return
-                } */
+                }
                 GM_xmlhttpRequest({
                     method: "post",
                     url: 'http://resolve.ilzya.com/resolve/',
                     data: 'auth_code='+getValue('auth_code')+'&'+param,
                     headers: { "Content-Type": "application/x-www-form-urlencoded" },
                     onload: function (res) {
+                        console.log(res)
                         let result = JSON.parse(res.response);
                         if (result.code === 0) {
                             _global._durl = result.durl;
@@ -582,7 +584,7 @@
         _func._obj.resolve(document.location.href)
 
 
-        /**initGeetest4({
+        initGeetest4({
             captchaId: 'b56cfe7983ce98c89b8aead50efc3eff'
         },function (captcha) {
             // captcha为验证码实例
@@ -606,10 +608,10 @@
                 let act1 = "验证失败"
                 feimao_actBox(act4,act1)
             })
-        });*/
+        });
 
         //-----------
-        /**
+
         let tips_loop
         let geetest_btn_click_loop = setInterval(function () {
             let geetest_btn_click = document.querySelector('.geetest_btn_click')
@@ -640,7 +642,7 @@
             }
         }, 500);
         //---------
-        */
+
         /**
          *act4左按钮文字，act1中按钮文字，act2右按钮文件，act4_fn左按钮点击函数，act1_fn中按钮点击，act2_fn右按钮点击
          */
