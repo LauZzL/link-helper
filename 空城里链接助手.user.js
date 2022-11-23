@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         空城里链接助手
 // @namespace    https://www.ilzya.com/archives/4/
-// @version      2.3.0
+// @version      2.3.1
 // @antifeature  membership
 // @description  免等待下载文件，超酷的哎~
 // @author       空城里
@@ -84,7 +84,7 @@
         _wd: {
             display: 'none'
         },
-        _version:'2.3.0',
+        _version:'2.3.1',
         _durl: null,
         _filename: '',
         _aria_url: 'http://localhost:6800/jsonrpc', //这里是Aria推送地址，本地默认不需要更改
@@ -176,7 +176,6 @@
                 let geetest_data = GM_getValue('geetest_data');
                 let param = '';
                 param = 'url=' + val;
-                console.log(geetest_data)
                 if (!geetest_data) {
                     param = 'url=' + val;
                 } else {
@@ -193,7 +192,7 @@
                 GM_xmlhttpRequest({
                     method: "post",
                     url: 'http://resolve.ilzya.com/resolve/',
-                    data: 'auth_code='+getValue('auth_code')+'&'+param,
+                    data: 'auth_code='+getValue('auth_code')+'&'+param+'&tm_version='+_global._version,
                     headers: { "Content-Type": "application/x-www-form-urlencoded" },
                     onload: function (res) {
                         console.log(res)
@@ -585,7 +584,7 @@
 
 
         initGeetest4({
-            captchaId: 'b56cfe7983ce98c89b8aead50efc3eff'
+            captchaId: '46219ac51e88b4faefbeb40435f0112a'
         },function (captcha) {
             // captcha为验证码实例
             captcha.appendTo("#nc_kcl");// 调用appendTo将验证码插入到页的某一个元素中，这个元素用户可以自定义
