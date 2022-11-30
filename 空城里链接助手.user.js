@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         空城里链接助手
 // @namespace    https://www.ilzya.com/archives/4/
-// @version      2.3.1
+// @version      2.3.2
 // @antifeature  membership
 // @description  免等待下载文件，超酷的哎~
 // @author       空城里
@@ -84,7 +84,7 @@
         _wd: {
             display: 'none'
         },
-        _version:'2.3.1',
+        _version:'2.3.2',
         _durl: null,
         _filename: '',
         _aria_url: 'http://localhost:6800/jsonrpc', //这里是Aria推送地址，本地默认不需要更改
@@ -173,9 +173,11 @@
         _obj: {
             resolve(val) {
                 _global._durl = null;
+                
                 let geetest_data = GM_getValue('geetest_data');
                 let param = '';
                 param = 'url=' + val;
+                /**
                 if (!geetest_data) {
                     param = 'url=' + val;
                 } else {
@@ -189,6 +191,7 @@
                     feimao_actBox(act4,act1,"","", function(){ window.location.reload() } )
                     return
                 }
+                 */
                 GM_xmlhttpRequest({
                     method: "post",
                     url: 'http://resolve.ilzya.com/resolve/',
@@ -569,10 +572,6 @@
 
 
 
-    GM_registerMenuCommand("空城里博客", registerMenuFunc._obj.toBlog);
-    GM_registerMenuCommand("交流群", registerMenuFunc._obj.toGroup);
-    GM_registerMenuCommand("赞助我", registerMenuFunc._obj.Donate);
-
 
     if ( Is_feimao() ) {
 
@@ -582,7 +581,7 @@
 
         _func._obj.resolve(document.location.href)
 
-
+        /** 
         initGeetest4({
             captchaId: '46219ac51e88b4faefbeb40435f0112a'
         },function (captcha) {
@@ -641,10 +640,11 @@
             }
         }, 500);
         //---------
-
+        */
         /**
          *act4左按钮文字，act1中按钮文字，act2右按钮文件，act4_fn左按钮点击函数，act1_fn中按钮点击，act2_fn右按钮点击
          */
+
         function feimao_actBox_fn (act4,act1,act2,act4_fn,act1_fn,act2_fn) {
             let actBox = document.getElementsByClassName('actBox')
             if(actBox&&actBox[0]){
@@ -661,6 +661,7 @@
 
             }
         }
+
         function act2_clickfn (click_) {
             let list = {
                 0:"",                      //自动验证",
