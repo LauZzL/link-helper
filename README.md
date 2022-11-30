@@ -7,11 +7,7 @@
 <div align="center">
 <img src="https://badges.toozhao.com/badges/01GFQ0A7T5PV89H85E6HJ1D35R/green.svg" />
 <img src="https://img.shields.io/github/stars/lzyAB/link-helper.svg"/>
-<<<<<<< HEAD
 <img src="https://img.shields.io/badge/version-2.3.3-red"/>
-=======
-<img src="https://img.shields.io/badge/version-2.3.2-red"/>
->>>>>>> f19863a2aaec3948c3c23d7bf89e6c170214d248
 <a href="https://www.ilzya.com/">
 <img src="https://img.shields.io/badge/%E5%8D%9A%E5%AE%A2-%E7%A9%BA%E5%9F%8E%E9%87%8C-brightgreen.svg"/>
 </a>
