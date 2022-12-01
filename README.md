@@ -19,6 +19,12 @@
 
 这是一款支持15+网赚盘解析的免费脚本，它是免费维护近两年时间的公益项目。
 
+## 某猫云众筹讨论？
+
+在这里发表你对众筹的意见及看法：[针对个别用户提出的某猫众筹方案？](https://github.com/sayokey/link-helper/issues/38) 
+
+ISSUES: https://github.com/sayokey/link-helper/issues/38
+
 ## 注意
 
 我们在油猴中没有任何账号且未发布过任何脚本，谨防被骗，官方脚本只在此页面进行更新及发布。
