@@ -21,6 +21,8 @@
 
 ## 某猫云众筹讨论？
 
+TG讨论群：[https://t.me/tomandjerry1337](https://t.me/tomandjerry1337)
+
 在这里发表你对众筹的意见及看法：[针对个别用户提出的某猫众筹方案？](https://github.com/sayokey/link-helper/issues/38) 
 
 ISSUES: https://github.com/sayokey/link-helper/issues/38
