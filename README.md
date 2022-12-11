@@ -31,6 +31,8 @@ ISSUES: https://github.com/sayokey/link-helper/issues/38
 
 我们在油猴中没有任何账号且未发布过任何脚本，谨防被骗，官方脚本只在此页面进行更新及发布。
 
+**某猫云现在无法正常工作！**
+
 ## 安装
 
 <ol>
