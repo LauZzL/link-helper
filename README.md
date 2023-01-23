@@ -19,6 +19,8 @@
 
 这是一款支持15+网赚盘解析的免费脚本，它是免费维护近两年时间的公益项目。
 
+**本地版：空城里链接助手.local.user.js**
+
 **某猫云接口已经永久停止维护！**
 
 **我们没有在任何平台售卖 "飞猫云" 解析服务，请勿上当受骗，该项目已经进入尾声，在年后我们会把所有代码以本地化在此更新，同时会关闭后台服务，感谢两年以来的陪伴！**
@@ -38,7 +40,7 @@
       <li><a href='http://tampermonkey.net/?browser=safari' target='_blank'>Safari Tampermonkey</a></li>
       <li><a href='https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd' target='_blank'>Egde Tampermonkey</a></li>
     </ul>
-    <li>安装脚本</li>
+    <li>安装脚本(服务器版)</li>
     <ul>
       <li><a href='https://github.com/sayokey/link-helper/raw/master/%E7%A9%BA%E5%9F%8E%E9%87%8C%E9%93%BE%E6%8E%A5%E5%8A%A9%E6%89%8B.user.js' target='_blank'>Github Raw - 一键安装,需要使用VPN</a></li>
       <li>
@@ -46,6 +48,16 @@
       </li>
       <li>
          <a href='https://github.com/sayokey/link-helper/blob/master/%E7%A9%BA%E5%9F%8E%E9%87%8C%E9%93%BE%E6%8E%A5%E5%8A%A9%E6%89%8B.user.js'>点我复制所有代码</a>，油猴 - 添加脚本 - 全选 - 粘贴复制的脚本
+      </li>
+    </ul>
+    <li>安装脚本(本地版)</li>
+    <ul>
+      <li><a href='https://github.com/sayokey/link-helper/raw/master/%E7%A9%BA%E5%9F%8E%E9%87%8C%E9%93%BE%E6%8E%A5%E5%8A%A9%E6%89%8B.local.user.js' target='_blank'>Github Raw - 一键安装,需要使用VPN</a></li>
+      <li>
+      <a href='https://cdn.jsdelivr.net/gh/sayokey/link-helper/%E7%A9%BA%E5%9F%8E%E9%87%8C%E9%93%BE%E6%8E%A5%E5%8A%A9%E6%89%8B.local.user.js' target='_blank'>jsdelivr cdn 一键安装</a>
+      </li>
+      <li>
+         <a href='https://github.com/sayokey/link-helper/blob/master/%E7%A9%BA%E5%9F%8E%E9%87%8C%E9%93%BE%E6%8E%A5%E5%8A%A9%E6%89%8B.local.user.js'>点我复制所有代码</a>，油猴 - 添加脚本 - 全选 - 粘贴复制的脚本
       </li>
     </ul>
 </ol>
