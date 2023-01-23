@@ -69,13 +69,13 @@
 
 
     const htmlIssuesElement = document.createElement('div');
-    htmlButtonElement.id = 'btn'
-    htmlButtonElement.innerText = '有问题?点我提交issues'
-    htmlButtonElement.style.position = 'absolute'
-    htmlButtonElement.style.top = '150px'
-    htmlButtonElement.style.right = '0px'
-    htmlButtonElement.style.borderRadius = '3%';
-    htmlButtonElement.onclick = function (){
+    htmlIssuesElement.id = 'btn'
+    htmlIssuesElement.innerText = '有问题?点我提交issues'
+    htmlIssuesElement.style.position = 'absolute'
+    htmlIssuesElement.style.top = '200px'
+    htmlIssuesElement.style.right = '0px'
+    htmlIssuesElement.style.borderRadius = '3%';
+    htmlIssuesElement.onclick = function (){
         window.open('https://github.com/sayokey/link-helper/issues')
     }
 
@@ -96,6 +96,7 @@
     `);
 
     document.body.append(htmlButtonElement)
+    document.body.append(htmlIssuesElement)
     document.body.append(htmlDivElement)
 
 
