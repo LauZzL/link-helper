@@ -9,7 +9,6 @@
 // @license AGPL
 
 
-// @include        *://www.feimaoyun.com/*
 // @include        *://*.lanzou*.com/*
 // @include        *://*.77file.com/*
 // @include        *://*.xunniupan.co/*
@@ -63,12 +62,6 @@
         GM_deleteValue(key);
     }
 
-
-    // 判断域名如果是jingfile则提示
-    if(document.domain == 'h5.jingfile.com'){
-        alert('飞猫云手机用户请使用浏览器PC端UA 或 浏览器电脑模式');
-        return
-    }
 
 
     if(!GM_getValue("act2_click")){ GM_setValue("act2_click",0) }
